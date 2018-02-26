@@ -79,6 +79,12 @@ git clone git@github.com:omisego/ewallet.git && cd ./ewallet
 mix deps.get
 ```
 
+Then get the front-end dependencies:
+
+```
+(cd apps/admin_panel/assets/ && yarn install)
+```
+
 Before we start the application, let's try running the tests:
 
 ```
