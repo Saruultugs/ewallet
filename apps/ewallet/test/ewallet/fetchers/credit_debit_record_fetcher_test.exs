@@ -1,7 +1,7 @@
-defmodule EWallet.Transactions.CreditDebitRecordFetcherTest do
+defmodule EWallet.CreditDebitRecordFetcherTest do
   use ExUnit.Case
   import EWalletDB.Factory
-  alias EWallet.Transactions.CreditDebitRecordFetcher
+  alias EWallet.CreditDebitRecordFetcher
   alias EWalletDB.{Repo, MintedToken, User, Account}
   alias Ecto.Adapters.SQL.Sandbox
 
@@ -63,7 +63,7 @@ defmodule EWallet.Transactions.CreditDebitRecordFetcherTest do
       res = CreditDebitRecordFetcher.fetch(%{
         "provider_user_id" => inserted_user.provider_user_id,
         "token_id" =>  inserted_token.friendly_id,
-        "account_id" => "fake"
+        "account_id" => "00000000-0000-0000-0000-000000000000"
       })
 
       assert res == {:error, :account_id_not_found}
