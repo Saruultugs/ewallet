@@ -121,6 +121,9 @@ Navigate to  `http://localhost:4000/api` in your browser and you should see the 
 }
 ```
 
+And you can access the Admin Panel web interface via `http://localhost:4000/admin`
+using the credentials provided during the seed.
+
 All set! Start playing around with the API using the Swagger docs below to learn more about the available endpoints. Enjoy!
 
 - [eWallet API](/apps/ewallet_api/swagger-doc.yaml)
